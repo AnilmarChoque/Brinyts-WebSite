@@ -1,0 +1,64 @@
+:root{
+    --color-blue: #545DFF;
+    --color-white: #FFFFFF;
+}
+
+body, html{
+    margin: 0;
+    background: linear-gradient(90deg, #545DFF, #251ab5, #0f5cea, #4FA9FF);
+    background-size: 300% 300%;
+    animation: colors 3s ease infinite ;
+}
+header{
+    background-color: transparent;
+}
+
+.nav-main{
+    display: flex;
+    height: 100;
+    background-color: transparent;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+.nav-imgtxt img{
+    width: 68px;
+}
+
+.nav-imgtxt{
+    display: flex;
+    align-items: center;
+}
+
+.nav-imgtxt label{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.nav-hamb{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.nav-imgtxt{
+    display: flex;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+@keyframes colors {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
