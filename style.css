@@ -1,13 +1,15 @@
 :root{
     --color-blue: #545DFF;
     --color-white: #FFFFFF;
+    --color-black: #000000;
 }
 
 body, html{
     margin: 0;
-    background: linear-gradient(90deg, #545DFF, #251ab5, #0f5cea, #4FA9FF);
+    background: linear-gradient(90deg, #545DFF, #4951E6, #3E45CC, #333AB2);
     background-size: 300% 300%;
     animation: colors 3s ease infinite ;
+    font-family: 'Montserrat', sans-serif;
 }
 header{
     background-color: transparent;
@@ -20,6 +22,7 @@ header{
     justify-content: space-between;
     padding: 0 15px;
     align-items: center;
+    background-color: var(--color-white);
 }
 
 .nav-imgtxt img{
@@ -34,13 +37,13 @@ header{
 .nav-imgtxt label{
     font-size: 18px;
     font-weight: bold;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .nav-hamb{
     font-size: 40px;
     font-weight: bold;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .nav-imgtxt{
@@ -49,6 +52,31 @@ header{
 
 .nav-mobile{
     display: none;
+}
+
+.Brinyts-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Brinyts-main img{
+    margin-top: 30px;
+    width: 252px;
+}
+
+.Brinyts-main h1{
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 32px;
+}
+
+.Brinyts-main p{
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 16px;
 }
 
 @keyframes colors {
