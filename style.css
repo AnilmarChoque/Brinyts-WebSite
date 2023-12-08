@@ -2,6 +2,7 @@
     --color-blue: #545DFF;
     --color-white: #FFFFFF;
     --color-black: #000000;
+    --color-blue-royal: #030086;
 }
 
 body, html{
@@ -10,6 +11,7 @@ body, html{
     background-size: 300% 300%;
     animation: colors 3s ease infinite ;
     font-family: 'Montserrat', sans-serif;
+    color: var(--color-white);
 }
 header{
     background-color: transparent;
@@ -79,6 +81,88 @@ header{
     font-size: 16px;
 }
 
+.seguranca-main{
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seguranca-main h1{
+    margin: 30px 0;
+}
+
+.seguranca-main p{
+    margin: 0 0;
+    text-align: center;
+}
+
+.seguranca-main img{
+    width: 252px;
+}
+
+.orca-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.orca-main h1{
+    margin: 0;
+}
+
+.orca-main img{
+    width: 300px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input[type="submit"]{
+    width: 138px;
+    height: 30px;
+    background-color: var(--color-blue-royal);
+    color: var(--color-white);
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+textarea{
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+}
+
+.input-form{
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    height: 120px;
+    background-color: var(--color-black);
+}
+
+footer img{
+    width: 250px;
+    margin-bottom: 10px;
+}
+
 @keyframes colors {
     0% {
       background-position: 0% 50%;
@@ -89,4 +173,37 @@ header{
     100% {
       background-position: 0% 50%;
     }
+}
+
+@media (min-width: 768px) {
+    .nav-hamb{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-mobile li{
+        margin: 0 15px;
+        
+        
+    }
+
+    .nav-mobile a{
+        text-decoration: none;
+        color: var(--color-black);
+        font-weight: 700;
+    }
+
+    .Brinyts-main{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin: 40px 0;
+    }
+
+    
+
+
 }

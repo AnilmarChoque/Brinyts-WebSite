@@ -22,21 +22,68 @@
         <a class="nav-hamb">&#9776;</a>
         <ul class="nav-mobile">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Orçamento</a></li>
+          <li><a href="#seguranca">Segurança</a></li>
+          <li><a href="#orca">Orçamento</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="Brinyts-main">
+      <section class="Brinyts-main" id="sobrenos">
         <img src="./img/imagem-main.png" alt="Brintys" />
-        <h1>Brintys</h1>
-        <p>Hospedagem e Segurança</p>
-      </section>
-      <section>
+        <div>
+          <h1>Brintys</h1>
+          <p>Hospedagem e Segurança</p>
+        </div>
         
       </section>
+      <section class="seguranca-main"id="seguranca">
+        <h1>Segurança em cada WebSite</h1>
+        <p>A Brinyts tem como objetivo, hospedar e manter a segurança do seu WebSite. Análisando situação caso a caso para atingir o melhor para o cliente.</p>
+        <img src="./img/bodyimg.png" alt="">
+      </section>
+      <section class="orca-main" id="orca">
+        <h1>Faça seu orçamento!</h1>
+        <img src="./img/orcamento.png" alt="">
+        <form>
+          <div>
+            <label>Nome</label>
+            <input class="input-form" type="text" required>
+          </div>
+          
+          <br>
+
+          <div>
+            <label>Email</label>
+            <input class="input-form" type="email" required>
+          </div>
+          
+          <br>
+
+          <div>
+            <label>Tipo de Site</label>
+            <select class="input-form">
+              <option>Blog</option>
+              <option>Portfolio</option>
+              <option>E-commerce</option>
+              <option>Institucional</option>
+            </select>
+          </div>
+          
+          <br>
+
+          <div>
+            <label>Detalhamento</label>
+            <textarea rows="4" cols="50"></textarea>
+          </div>
+          
+          <br>
+          <input type="submit" value="Enviar">
+      </form>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <img src="./img/LogoMarca.png" alt="">
+      <label>© 2023, Brinyts. Todos os direitos reservados.</label>
+    </footer>
   </body>
 </html>
