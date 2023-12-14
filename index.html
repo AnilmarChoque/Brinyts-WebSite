@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
     <title>Brintys</title>
   </head>
   <body>
@@ -37,24 +38,28 @@
         
       </section>
       <section class="seguranca-main"id="seguranca">
-        <h1>Segurança em cada WebSite</h1>
-        <p>A Brinyts tem como objetivo, hospedar e manter a segurança do seu WebSite. Análisando situação caso a caso para atingir o melhor para o cliente.</p>
+        <div>
+          <h1>Segurança em cada WebSite</h1>
+          <p>A Brinyts tem como objetivo, hospedar e manter a segurança do seu WebSite. Análisando situação caso a caso para atingir o melhor para o cliente.</p>
+        </div>
         <img src="./img/bodyimg.png" alt="">
       </section>
       <section class="orca-main" id="orca">
-        <h1>Faça seu orçamento!</h1>
-        <img src="./img/orcamento.png" alt="">
+        <div class="orca-txt">
+          <h1>Faça seu orçamento!</h1>
+          <img src="./img/orcamento.png" alt="">
+        </div>
         <form>
           <div>
             <label>Nome</label>
-            <input class="input-form" type="text" required>
+            <input id="nome" class="input-form" type="text" required>
           </div>
           
           <br>
 
           <div>
             <label>Email</label>
-            <input class="input-form" type="email" required>
+            <input id="email" class="input-form" type="email" required>
           </div>
           
           <br>
@@ -73,11 +78,11 @@
 
           <div>
             <label>Detalhamento</label>
-            <textarea rows="4" cols="50"></textarea>
+            <textarea id="detalhamento" rows="4" cols="50"></textarea>
           </div>
           
           <br>
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Enviar" onclick="validarFormulario()">
       </form>
       </section>
     </main>
